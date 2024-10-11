@@ -1,6 +1,8 @@
 # Download-via-XLSX
 
-This unit contain a node project that would parse data from the `in.xlsx` file and make calls to download those files.
+Built by Jared Hettinger
+
+This unit contains a node project that will parse data from the `in.xlsx` file and make calls to download those files.
 
 ## To Install
 
