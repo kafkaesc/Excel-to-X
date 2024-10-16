@@ -4,7 +4,8 @@
     "description": "Read a CSV file and insert valid data into a database",
     "main": "index.js",
     "scripts": {
-        "clean": "rm errors.json",
+        "clean": "rm -f errors.json music.db",
+        "setup-db": "sqlite3 music.db < setup.sql",
         "start": "node index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
