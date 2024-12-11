@@ -13,6 +13,10 @@ const sheets = inFile.SheetNames;
 // Initiate empty errors array for logging any failed rows
 const errors = [];
 
+function sani(st) {
+    return st.replace(/\'/g, "''");
+}
+
 for (let i = 0; i < sheets.length; i++) {
     const sheet = fr.utils.sheet_to_json(inFile.Sheets[inFile.SheetNames[i]]);
     for (let j = 0; j < sheet.length; j++) {
