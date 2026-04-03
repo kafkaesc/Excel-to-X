@@ -1,4 +1,6 @@
 *.logs
+errors.json
+music.db
 .DS_Store
 .env
 .env.development.local
