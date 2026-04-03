@@ -1,10 +1,11 @@
 {
-    "name": "download-via-xlsx",
+    "name": "insert-via-xlsx",
     "version": "1.0.0",
-    "description": "Read an XLSX file and download classic fiction from a server",
+    "description": "Read an XLSX file and insert valid data into a database",
     "main": "index.js",
     "scripts": {
-        "clean": "rm -rf ./out/* rm errors.json echo $null >> ./out/.gitkeep",
+        "clean": "rm -f errors.json music.db",
+        "setup-db": "sqlite3 music.db < setup.sql",
         "start": "node index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -19,7 +20,7 @@
     },
     "homepage": "https://github.com/kafkaesc/Excel-to-X#readme",
     "dependencies": {
-        "axios": "^1.7.7",
-        "exceljs": "^4.4.0"
+        "exceljs": "^4.4.0",
+        "sqlite3": "^6.0.1"
     }
 }
